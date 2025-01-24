@@ -8,33 +8,37 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="calcutator">
-      <input id="display" readonly required />
-      <div id="keys">
-        <button onclick="clearDisplay()" class="btn">C</button>
-        <button onclick="currency('-')" class="btn">+/-</button>
-        <button onclick="conversion(100)" class="btn">%</button>
-        <button onclick="appendtoDisplay('/')" class="operator-btn">/</button>
-        <button onclick="appendtoDisplay('7')">7</button>
-        <button onclick="appendtoDisplay('8')">8</button>
-        <button onclick="appendtoDisplay('9')">9</button>
-        <button onclick="appendtoDisplay('*')" class="operator-btn">*</button>
-        <button onclick="appendtoDisplay('4')">4</button>
-        <button onclick="appendtoDisplay('5')">5</button>
-        <button onclick="appendtoDisplay('6')">6</button>
-        <button onclick="appendtoDisplay('-')" class="operator-btn">-</button>
-        <button onclick="appendtoDisplay('1')">1</button>
-        <button onclick="appendtoDisplay('2')">2</button>
-        <button onclick="appendtoDisplay('3')">3</button>
-        <button onclick="appendtoDisplay('+')" class="operator-btn">+</button>
-        <button onclick="appendtoDisplay('0')">0</button>
-        <button onclick="appendtoDisplay('.')">.</button>
-        <button onclick="calculate()" class="op-btn">=</button>
-        <button onclick="back()" class="operator-btn">
-          <i class="fa-solid fa-arrow-left"></i>
-        </button>
+    <div class="calculator">
+      <input class="display" id="display" readonly required />
+      <div class="buttons">
+          <button onclick="clearDisplay()" class="clear">C</button>
+          <button onclick="appendtoDisplay('/')" class="operator">/</button>
+          <button onclick="appendtoDisplay('*')" class="operator">*</button>
+          <button onclick="appendtoDisplay('-')" class="operator">-</button>
+          
+          <button onclick="appendtoDisplay('7')">7</button>
+          <button onclick="appendtoDisplay('8')">8</button>
+          <button onclick="appendtoDisplay('9')">9</button>
+          <button onclick="appendtoDisplay('+')" class="operator">+</button>
+          
+          <button onclick="appendtoDisplay('4')">4</button>
+          <button onclick="appendtoDisplay('5')">5</button>
+          <button onclick="appendtoDisplay('6')">6</button>
+          <button onclick="currency('-')" class="operator">+/-</button>
+          
+          <button onclick="appendtoDisplay('1')">1</button>
+          <button onclick="appendtoDisplay('2')">2</button>
+          <button onclick="appendtoDisplay('3')">3</button>
+          <button onclick="conversion(100)" class="operator">%</button>
+          
+          <button onclick="appendtoDisplay('0')">0</button>
+          <button onclick="appendtoDisplay('.')">.</button>
+          <button onclick="calculate()" class="equals">=</button>
+          <button onclick="back()">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
       </div>
-    </div>
+  </div>
     <script src="script.js"></script>
   </body>
 </html>
