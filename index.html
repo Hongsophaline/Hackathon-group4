@@ -10,9 +10,9 @@
     <div id="calcutator">
       <input id="display" readonly required />
       <div id="keys">
-        <button onclick="clearDisplay()" class="operator-btn">AC</button>
-        <button onclick="currency('-')" class="operator-btn">+/-</button>
-        <button onclick="conversion(100)" class="operator-btn">%</button>
+        <button onclick="clearDisplay()" class="btn">C</button>
+        <button onclick="currency('-')" class="btn">+/-</button>
+        <button onclick="conversion(100)" class="btn">%</button>
         <button onclick="appendtoDisplay('/')" class="operator-btn">/</button>
         <button onclick="appendtoDisplay('7')">7</button>
         <button onclick="appendtoDisplay('8')">8</button>
@@ -28,7 +28,8 @@
         <button onclick="appendtoDisplay('+')" class="operator-btn">+</button>
         <button onclick="appendtoDisplay('0')">0</button>
         <button onclick="appendtoDisplay('.')">.</button>
-        <button onclick="calculate()">=</button>
+        <button onclick="calculate()" class="op-btn">=</button>
+        <button onclick="back()" class="operator-btn">B</button>
       </div>
     </div>
     <script src="script.js"></script>

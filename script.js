@@ -19,3 +19,7 @@ function conversion(input) {
 function currency(input) {
   display.value = input + display.value;
 }
+function back () {
+  display.value = display.value.slice(0, -1);
+}
+
