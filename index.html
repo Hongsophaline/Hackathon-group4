@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Document</title>
   </head>
   <body>
@@ -29,7 +30,9 @@
         <button onclick="appendtoDisplay('0')">0</button>
         <button onclick="appendtoDisplay('.')">.</button>
         <button onclick="calculate()" class="op-btn">=</button>
-        <button onclick="back()" class="operator-btn">B</button>
+        <button onclick="back()" class="operator-btn">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
       </div>
     </div>
     <script src="script.js"></script>
